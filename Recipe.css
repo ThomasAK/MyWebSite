@@ -1,0 +1,46 @@
+body{
+  background: Lightgray;
+}
+header{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  background: rgba(14, 200, 80, .5);
+  top: 0%;
+}
+
+section{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 6%;
+  padding-top: 2%;
+  padding-bottom:7%;
+  text-align: center;
+  background: white;
+}
+img{
+  border-style: solid;
+}
+.items{
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom:5%;
+  padding: 1%;
+  border-style: solid;
+  padding-left:5%;
+  padding-right:5%;
+}
+.btn{
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.me{
+    width: 75%;
+    height: auto;
+    margin-bottom: 2%;
+}
+h1{
+    margin-right: 18%;
+}

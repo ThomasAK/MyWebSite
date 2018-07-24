@@ -1,0 +1,69 @@
+body{
+  background: Lightgray;
+}
+header{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  background: rgba(14, 200, 80, .5);
+  top: 0%;
+}
+section{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top:6%;
+  padding-top: 1%;
+  padding-bottom:7%;
+  text-align: center;
+  background: white;
+}
+.dinner{
+  border-style: solid;
+  border-width: 2px;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+.breakfast{
+  border-style: solid;
+  border-width: 2px;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%; 
+}
+div.desc img {
+    width: auto;
+    height: 200px;
+ 
+}
+div.desc {
+  padding: 15px;
+  margin: 5px;
+  display:inline-block;
+  background:gray;
+}
+.about{
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: solid;
+  border-width: 2px;
+}
+.contact{
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right:5%;
+}
+.btn{
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.main{
+    margin-right: 12%;
+}

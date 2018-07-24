@@ -1,0 +1,130 @@
+@import"https://bootswatch.com/4/cyborg/bootstrap.css";
+
+body {
+	background-color: rgb(77, 77, 77);
+	background-image: url("https://image.ibb.co/eVgCDv/Boarding4.jpg");
+
+}
+
+p {
+	color: 	#111;
+	text-align: center;
+	text-decoration: bold;
+	background: hsla(0,0%,90%,.4);
+	border-radius: 1em;
+  padding: .5em;
+}
+
+.header {
+  box-shadow: 0 5px 10px rgba(0,0,0,.4);
+	font-size: 7.2em;
+	z-index: 9;
+	text-align: center;
+	margin: 0;
+	height: 120px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: hsla(0,0%,50%,.6);
+  
+}
+
+.sub-header {
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: .5em .5em;
+	margin: .5em auto;
+	text-align: center;
+	background: hsla(0,0%,90%,.4);
+	border-radius: 1em;
+  
+}
+
+.subone{
+	width: 150px;
+}
+.subtwo{
+	width: 150px;
+}
+.subtwo-1{
+	width: 200px;
+}
+.subtwo-2{
+	width: 300px;
+}
+.subthree{
+	width: 200px;
+}
+
+.sub-sub-header {
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: .5em .5em;
+	margin: .5em auto;
+	text-align: center;
+	background: hsla(0,0%,90%,.4);
+	border-radius: 1em;
+  
+}
+
+.content {
+	position: fixed;
+	top: 120px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.main{ 
+	border-radius: 1em;
+	background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.AboutMe.section {
+
+}
+
+.portfolio.section {
+	background: hsla(0,0%,60%,.5);
+}
+
+.ContactMe.section{
+	background: hsla(0,0%,30%,.7);
+}
+
+.section{
+  box-shadow: 0 5px 10px rgba(0,0,0,.4);
+  background: hsla(0,0%,80%,.5);
+  border-left: solid 1px #999;
+  border-right: solid 1px #999;
+  border-bottom: solid 1px #999;
+}
+.rounded-top, .section:first-child {
+  border-radius: 1em 1em 0 0; 
+  border-top: solid 1px #999;
+}
+.rounded-bottom, .section:last-child {
+  border-radius: 0 0 1em 1em; 
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 2em;
+    height: 85px;
+    padding: 0px;
+  }
+  .content {
+    top: 85px;
+  }
+}
