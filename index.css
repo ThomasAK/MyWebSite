@@ -5,6 +5,10 @@ body {
     background-image: url("https://image.ibb.co/eVgCDv/Boarding4.jpg");
 }
 
+nav{
+    z-index: 1;
+}
+
 p {
     text-align: center;
     text-decoration: bold;
@@ -12,26 +16,6 @@ p {
     padding: .5em;
 }
 
-.header {
-    box-shadow: 0 5px 10px rgba(0,0,0,.4);
-    font-size: 300%;
-    z-index: 9;
-    text-align: center;
-    padding-left: 2%;
-    margin: 0;
-    
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: hsla(0,0%,50%,.8);
-  
-}
-.select{
-    font-size: 60%;
-    position: relative;
-}
 
 .sub-header {
     color: black;
@@ -40,6 +24,7 @@ p {
     text-decoration: underline;
     text-align: center;
     border-radius: .5em;
+    padding-top: .5em;
 }
 
 .content_width {
@@ -51,41 +36,37 @@ p {
 
 .content {
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
 }
-.main{ 
-    border-radius: 1em;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
 
 .portfolio.section {
     background: hsla(0,0%,60%,.9);
     color: 	#111;
 }
 
-.ContactMe.section{
+.contactMe.section{
     background: hsla(0,0%,30%,.8);
     color: white;
+    padding-bottom: 0;
+}
+
+.resume.section{
+    background: none;
 }
 
 .section{
+    border-radius: .5em .5em .5em .5em;
     box-shadow: 0 5px 10px rgba(0,0,0,.4);
     background: hsla(0,0%,80%,.9);
-    padding: 1em;
     color: 	#111;
-}
-.rounded-top, .section:first-child {
-    border-radius: .5em .5em 0 0; 
-    border-top: solid 1px #999;
-}
-.rounded-bottom, .section:last-child {
-    border-radius: 0 0 .5em .5em; 
+    max-width: 200rem;
+    margin-top: 10%;
+    height: auto;
+    padding-bottom: 1rem;
 }
 
 .img-responsive {
@@ -100,13 +81,31 @@ p {
     margin-right: auto;
 }
 
+.content-toDisplay {
+    display: none;
+}
+
+.content-toDisplay--active {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
 @media screen and (max-width: 600px) {
-  .header {
-    font-size: 2em;
-    height: 85px;
-    padding: 0px;
-  }
-  .content {
-    top: 85px;
-  }
+    .header {
+        font-size: 2em;
+        height: 85px;
+        padding: 0px;
+    }
+    .content {
+        top: 85px;
+    }
 }

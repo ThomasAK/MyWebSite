@@ -1,87 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
-    <h1 class="header">Thomas Kempton 
-        <select class="select" name="portfolio" onchange="location = this.value;">
-            <option>Menu</option>
-            <option value="#AboutMe">About</option>
-            <option value="#portfolio">Portfolio</option>
-            <option value="#ContactMe">Contact</option>
-        </select>
-        <select class="select" name="Sites" onchange="location = this.value;">
-            <option value="index.html">Sites</option>
-            <option value="RecipeIndex.html">Recipes</option>
-            <option value="School/PHPPage/WhoAmI.php">School PHP</option>
-            <option value="School/MySql/MySql.php">School MySql</option>
-            <option value="School/Java/Form.php">School Java</option>
-            <option value="School/Final/LoginForm.php">School Final</option>
-        </select>
-    </h1>
-<div class="content">
-	<div class="container main">
-            <div class="section">     
-                <div class="img-width"><img class="img-responsive thumbnail" src="img/SnowboarindAngel.jpg" alt="The one and only Thomas Kempton">
-                </div>
-                <a id="AboutMe"></a>
-                <div>
-                    <h2 class="sub-header"> About Me </h2>
-                    <p> 
-                            I enjoy being challenged with projects that require me to work out side of my comfort and knowledge set, 
-                            as continuing to learn new softwares and development techniques are important to me and the success of your organization 
-                    </p>
-                </div>
-                
-                <div>
-                    <h2 class="sub-header"> Skills </h2>
-                    <p>Java – JavaScript - PHP – MySql – CSS – HTML – AWS EC2,ECR – Docker - Node.js
-                        <br> CompTIA A+ - Windows - Linux </p>
-                </div>
-            </div>	
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thomas's Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <div class="navbar-header ">
+        <a class="navbar-brand">Thomas Kempton</a>
+    </div>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" type="button">About</a>
+        <a class="nav-item nav-link" type="button">Portfolio</a>
+        <a class="nav-item nav-link" type="button">Contact</a>
+        <a class="nav-item nav-link" type="button">Resume</a>
+        <div class="dropdown">
+            <a class="dropdown nav-link">School Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="RecipeIndex.html">HTML</a></li>
+                <li><a href="School/PHPPage/WhoAmI.php">PHP</a></li>
+                <li><a href="School/MySql/MySql.php">MySql</a></li>
+                <li><a href="School/Java/Form.php">Java</a></li>
+                <li><a href="School/Final/LoginForm.php">Final</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-            <div class="portfolio section">
-            <a id="portfolio"></a> 
-                <div>
+<div class="content">
+    <div class="container main">
+        <div id="About" class="section content-toDisplay content-toDisplay--active">
+            <div class="img-width"><img class="img-responsive thumbnail" src="img/SnowboarindAngel.jpg" alt="The one and only Thomas Kempton">
+            </div>
+            <div>
+                <h2 class="sub-header"> About Me </h2>
+                <p>
+                    There is so much i could say for this. I am a snowboard, car enthusiast, gamer, coder/programmer, expert waffle maker, Father of 3,
+                    super weird, and so much more. At this point in my life i am figuring out how to navigate this crazy thing called life.  A couple of
+                    the things i am juggling right now would be 1 be an awesome Father 2 be an awesome Husband 3 be an awesome employee 4 be friendly to everyone.
+                    My big goal at the moment is to be a Software Engineer either doing back end or full stack.  My goals to help me with that are to continue my
+                    college classes and use online classes like udemy. As well continue to improve doing my current role as a Software development engineer in test.
+                    While i do enjoy being an SDET it just doesn't challenge me often. I want to be in a position where i am alway's trying to solve the hardest
+                    problems.
+                </p>
+            </div>
+            <div>
+                <h2 class="sub-header"> Skills </h2>
+                <p>JavaScript - Playwright - GEB - Axios - Node.js - Postman – MySql – CSS – HTML – AWS EC2,ECR – Docker - Discord.js
+                    <br> CompTIA A+ - Windows - Linux </p>
+            </div>
+        </div>
+
+        <div id="Portfolio" class="portfolio section content-toDisplay ">
+            <div>
                 <h2 class="sub-header"> Portfolio </h2>
-                </div>
-                <div class="content_width">
-                    <h2 class="sub-header"> PaulBrothers Heating and Air </h2>
-                    <a href="http://www.paulbrothersutah.com" target="_blank"> <img class="img-responsive thumbnail" src="img/pbros.png">
-                    </a>
-                    <p>Built using HTML, CSS, and Javascrip.  Built and deployed using Docker and AWS ECR.  Hosted through AWS EC2</p>
-                </div>
-                <div class="content_width">
-                    <h2 class="sub-header"> School Website for xhtml </h2>
-                    <a href='RecipeIndex.html' target="_blank"> <img class="img-responsive thumbnail" src="img/recipes.png"></a>
-                    <p>School Project built using HTML and CSS</p>
-                </div>
-                <div class="content_width">
-                    <h2 class="sub-header"> Merge jobs plugin for Planswift </h2>
-                    <img class="img-responsive thumbnail" src="img/Merge.png">			
-                    <p>	At Planswift I created a plug in for our primary software that would merge multiple construction estimates together. 
-                        I decided to create it because a lot of customers had been wanting a plug in that could merge estimates. This project was challenging as 
-                        i had to learn Delphi and how to use the Planswift API.  The plug in is still used and is given out almost daily to customers. Overall it was a great 
-                        experience and provided a great value to the customers and Planswift. 
-                    </p>	
-                </div>
             </div>
-		
-            <div class="ContactMe section ">
-                <a id="ContactMe"></a>
-                <div>                       
-                    <h2 class="sub-header"> Contact Me</h2>
-                </div>
-                <div>
-                    <p> Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, or random questions about the universe and the meaning of life. Feel free to drop me a line anytime.
-                        I promise to reply A.S.A.P. <br><br>
-                        <a href="https://www.facebook.com/thomas.kem" target="_blank" class="btn btn-primary" role="button">FaceBook</a>
-                        <a href="https://www.freecodecamp.com/thomasak" target="_blank" class="btn btn-success" role="button">FreeCodeCamp</a>
-                        <a href="https://github.com/ThomasAK" target="_blank" class="btn btn-secondary" role="button">GitHub</a>
-                        <br> <br><strong> Email - Thomas.a.k.tk@gmail.com </strong> 
-                    </p>
-                </div>
+            <div class="content_width">
+                <h2 class="sub-header"> PaulBrothers Heating and Air </h2>
+                <a href="http://www.paulbrothersutah.com" target="_blank"> <img class="img-responsive thumbnail" src="img/pbros.png">
+                </a>
+                <p>Built using HTML, CSS, and Javascrip.  Built and deployed using Docker and AWS ECR.  Hosted through AWS EC2</p>
             </div>
-	</div>
+            <div class="content_width">
+                <h2 class="sub-header"> School Website for xhtml </h2>
+                <a href="RecipeIndex.html" target="_blank"> <img class="img-responsive thumbnail" src="img/recipes.png"></a>
+                <p>School Project built using HTML and CSS</p>
+            </div>
+            <div class="content_width">
+                <h2 class="sub-header"> Merge jobs plugin for Planswift </h2>
+                <img class="img-responsive thumbnail" src="img/Merge.png">
+                <p>	At Planswift I created a plug in for our primary software that would merge multiple construction estimates together.
+                    I decided to create it because a lot of customers had been wanting a plug in that could merge estimates. This project was challenging as
+                    i had to learn Delphi and how to use the Planswift API.  The plug in is still used and is given out almost daily to customers. Overall it was a great
+                    experience and provided a great value to the customers and Planswift.
+                </p>
+            </div>
+        </div>
+
+        <div id="Contact" class="contactMe section content-toDisplay ">
+            <div>
+                <h2 class="sub-header"> Contact Me</h2>
+            </div>
+            <div>
+                <p> Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, or random questions about the universe and the meaning of life. Feel free to drop me a line anytime.
+                    I promise to reply A.S.A.P. <br><br>
+                    <a href="https://www.facebook.com/thomas.kem" target="_blank" class="btn btn-primary" role="button">FaceBook</a>
+                    <a href="https://www.freecodecamp.com/thomasak" target="_blank" class="btn btn-success" role="button">FreeCodeCamp</a>
+                    <a href="https://github.com/ThomasAK" target="_blank" class="btn btn-light" role="button">GitHub</a>
+                    <br> <br><strong> Email - Thomas.a.k.tk@gmail.com </strong>
+                </p>
+            </div>
+        </div>
+
+        <div id="Resume" class="section content-toDisplay resume">
+            <div>
+                <embed src="files/ReturnMirror.pdf" width="100%" height="750rem" />
+            </div>
+        </div>
+    </div>
 </div>
+</body>
 </html>
