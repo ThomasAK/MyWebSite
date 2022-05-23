@@ -1,12 +1,23 @@
 <html>
-    <head><link rel="stylesheet" href="MainStyles.css"></head>
+    <head><link rel="stylesheet" href="MainStyles.css">
+    <title>Recipe's</title>
+    </head>
   <body>
      <header>
          <div class="btn">
-      <input type="submit" value="Dinner" onclick="window.location.href='Dinner.html'" />
-      <input type="submit" value="Breakfast" onclick="window.location.href='Breakfast.html'" />
+            <input type="submit" value="Dinner" onclick="window.location.href='Dinner.html'" />
+            <input type="submit" value="Breakfast" onclick="window.location.href='Breakfast.html'" />
          </div>
-      <h1 class="main">Thomas's Recipes</h1>
+      <h1 class="main">Thomas's Recipe's</h1>
+       <select  name="Sites" onchange="location = this.value;"> 
+                <option>Sites</option>
+                <option value="index.html">Portfolio</option>
+                <option value="RecipeIndex.html">Recipes</option>
+                <option value="School/PHPPage/WhoAmI.php">School PHP</option>
+                <option value="School/MySql/MySql.php">School MySql</option>
+                <option value="School/Java/Form.php">School Java</option>
+                <option value="School/Final/LoginForm.php">School Final</option>
+        </select>
     </header>
     <section>
       <div class="about">
@@ -14,21 +25,21 @@
       </div>
         <div class="dinner">
           <h1>Dinner</h1>
-         <div class="desc"><b>Tommy's Spaghetti <br><a href ="Spagehtti.html" target="_self"><img class="me" src="https://thespicyapron.com/wp-content/uploads/2017/06/Easy-Camping-Meals-Pasta-with-Fork.jpg" alt="pic of Spaghetti"></a></div>
-          <div class="desc"><b>Tommy's Chicken Alfredo<br><a href ="Alfredo.html" target="_self"><img class="me" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/9/15/1/FNK_Chicken-Fettucine-Alfredo_s4x3.jpg.rend.hgtvcom.616.462.suffix/1442375396342.jpeg" alt="pic of Alfredo"></a></div>
-          <div class="desc"><b>Tommy's Steak <br><a href ="Steak.html" target="_self"><img class="me" src="https://atmedia.imgix.net/5cdc344761c20615ed0543f9615fdda8f169cae3?auto=format&q=45&w=640.0&h=430.0&fit=max&cs=strip" alt="Steak"></a></div>
-          <div class="desc"><b>Mom's Enchiladas<br><a href ="Enchiladas.html" target="_self"><img class="me" src="https://www.cscassets.com/recipes/wide_cknew/wide_25920.jpg" alt="Enchiladas"></a></div>
+          <div class="desc">Tommy's Spaghetti<br><a href ="Spagehtti.html" target="_self"><img src="https://thespicyapron.com/wp-content/uploads/2017/06/Easy-Camping-Meals-Pasta-with-Fork.jpg" alt="pic of Spaghetti"></a></div>
+          <div class="desc">Tommy's Chicken Alfredo<br><a href ="Alfredo.html" target="_self"><img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/9/15/1/FNK_Chicken-Fettucine-Alfredo_s4x3.jpg.rend.hgtvcom.616.462.suffix/1442375396342.jpeg" alt="pic of Alfredo"></a></div>
+          <div class="desc">Tommy's Steak <br><a href ="Steak.html" target="_self"><img src="img/Steak.jpg" alt="Steak"></a></div>
+          <div class="desc">Mom's Enchiladas<br><a href ="Enchiladas.html" target="_self"><img src="https://www.cscassets.com/recipes/wide_cknew/wide_25920.jpg" alt="Enchiladas"></a></div>
           
         </div>
       
       <div class="breakfast">
           <h1>Breakfast</h1>
-         <div class="desc">Tommy's Breakfast Burrito<br><a href ="Burrito.html" target="_self"><img class="me" src="http://muchasgraciasmexicanfood.com/wp-content/uploads/2017/08/BaconBreakfast-Burrito.jpg" alt="Breakfast Burrito"></a></div>
-          <div class="desc">Tommy's Waffles<br><a href ="https://codepen.io/thomas5K/pen/rdXbPz" target="blank"><img class="me" src="https://fthmb.tqn.com/DkaEze6RAeG3us_HNZ5u8-l-JdQ=/2500x1669/filters:fill(auto,1)/fluffywaffles2500-598cb26b03f402001147aaee.jpg" alt="Waffles"></a></div>
+         <div class="desc">Tommy's Breakfast Burrito<br><a href ="Burrito.html" target="_self"><img src="img/breakFastBurrito.jpg" alt="Breakfast Burrito"></a></div>
+          <div class="desc">Tommy's Waffles<br><a href ="https://codepen.io/thomas5K/pen/rdXbPz" target="blank"><img src="https://fthmb.tqn.com/DkaEze6RAeG3us_HNZ5u8-l-JdQ=/2500x1669/filters:fill(auto,1)/fluffywaffles2500-598cb26b03f402001147aaee.jpg" alt="Waffles"></a></div>
           
-         <div class="desc">Tommy's Crepes<br><a href ="https://codepen.io/thomas5K/pen/rdXbPz" target="blank"><img class="me" src="http://theskinnychickscookbook.com/wp-content/uploads/2015/08/crepe.jpeg" alt="Crepes"></a></div>
+         <div class="desc">Tommy's Crepes<br><a href ="https://codepen.io/thomas5K/pen/rdXbPz" target="blank"><img src="http://theskinnychickscookbook.com/wp-content/uploads/2015/08/crepe.jpeg" alt="Crepes"></a></div>
         
-         <div class="desc">Tommy's Frech Toast<br><a href ="https://codepen.io/thomas5K/pen/rdXbPz" target="blank"><img class="me" src="https://assets.marthastewart.com/styles/wmax-1500/d13/break_01495_t/break_01495_t_horiz.jpg?itok=MCyCnV30" alt="French Toast"></a></div>
+         <div class="desc">Tommy's Frech Toast<br><a href ="https://codepen.io/thomas5K/pen/rdXbPz" target="blank"><img src="https://assets.marthastewart.com/styles/wmax-1500/d13/break_01495_t/break_01495_t_horiz.jpg?itok=MCyCnV30" alt="French Toast"></a></div>
         </div>
     </section>
             

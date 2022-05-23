@@ -43,6 +43,7 @@ div.desc {
   margin: 5px;
   display:inline-block;
   background:gray;
+  font-weight: bold;
 }
 .about{
   padding: 2%;

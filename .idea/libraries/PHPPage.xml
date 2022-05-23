@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PHPPage">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/School/PHPPage/PHPPage.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
