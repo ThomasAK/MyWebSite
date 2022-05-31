@@ -63,9 +63,9 @@ p {
     box-shadow: 0 5px 10px rgba(0,0,0,.4);
     background: hsla(0,0%,80%,.9);
     color: 	#111;
-    max-width: 200rem;
-    margin-top: 10%;
+    margin-top: 8%;
     height: auto;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -99,13 +99,23 @@ p {
     padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) {
     .header {
         font-size: 2em;
         height: 85px;
         padding: 0px;
     }
+    .section {
+        margin-top: 0%;
+    }
     .content {
         top: 85px;
+    }
+    a {
+        text-align: center;
+    }
+    .content_width {
+        width: auto;
+        padding-right: 1em;
     }
 }

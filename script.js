@@ -3,6 +3,8 @@
 const sections = document.querySelectorAll('.section')
 const nav = document.querySelector('.navbar-nav')
 const content = document.querySelector('.content')
+const navItems = document.querySelectorAll('.nav-item')
+const navToggler = document.querySelector('.navbar-toggler')
 
 const changeContent = function (element){
     // Guard clause
@@ -21,5 +23,14 @@ const changeContent = function (element){
 nav.addEventListener('click', function (e){
     changeContent(e.target.closest('.nav-item'))
 })
+
+navItems.forEach(item => {
+    item.addEventListener('click', function (e){
+        if ($(window).width() < 992){
+            navToggler.click()
+        }
+    })
+})
+
 
 
